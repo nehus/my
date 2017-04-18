@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="{% url 'snippets:Login'  %}" method="POST" name="register" onsubmit="return checkForm(this);">{% csrf_token %}
+  Username:<br>
+  <input type="text" name="uname" value="enter your registered name">
+  <br>
+  Mobile:<br>
+  <input type="text" name="mobile" value="enter your regitered mobile">
+  
+  <li><a href="{% url 'snippets:UserSignUp'  %}"> click here for registration</a></li>
+  <br><br>
+  
+  <input type="submit"  value="login">
+</form> 
+
+
+</body>
+</html>

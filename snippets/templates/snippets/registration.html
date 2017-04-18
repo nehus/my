@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="{% url 'snippets:UserSignUp' %}" method="POST" name="register">{% csrf_token %} 
+
+
+  First name:<br>
+  <input type="text" name="uname" value="enter your name">
+  <br>
+  phone number:<br>
+  <input type="text" name="mobile" value="enter your mobile no">
+  <br><br>
+  <input type="Submit" value="Submit">
+  <br> <br>
+  
+</form> 
+
+<p>registration</p>
+
+</body>
+</html>

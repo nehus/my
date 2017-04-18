@@ -1,0 +1,16 @@
+<html>
+<body>
+<form action="{% url 'snippets:OTP' my_id  %}" method="POST" name="OTP" >{% csrf_token %} 
+
+  OTP:<br>
+  <input type="text" name="otp" value="enter your otp">
+  <br>
+  
+  <br><br>
+  <input type="submit" value="Submit">
+  <li><a href="{% url 'snippets:resend_otp' my_id %}"> resend otp</a></li>
+</form> 
+
+
+</body>
+</html>
